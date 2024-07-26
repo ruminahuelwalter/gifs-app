@@ -12,7 +12,13 @@ import { CommonModule } from '@angular/common';
 export class SidebarComponent {
   constructor(private gifsService: GifsService ){}
 
-  get tags(){
+  get tags(): string[]{
     return this.gifsService.tagsHistory;
+  }
+
+  selectSearchTag(tag: string){
+    this.gifsService.searchTag(tag);
+
+    
   }
 }
