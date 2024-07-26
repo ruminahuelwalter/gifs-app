@@ -41,7 +41,6 @@ export class GifsService {
             console.log({ gifs: this.gifList })
         });
         
-
     }
 
 }
