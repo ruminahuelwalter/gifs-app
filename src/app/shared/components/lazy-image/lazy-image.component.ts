@@ -22,8 +22,8 @@ export class LazyImageComponent implements OnInit {
     if(!this.url) throw new Error('URL property is required');
   }
   onLoad(): void {
-    console.log('Image loaded')
     this.hasLoaded = true;
+    
   }
 
 }
