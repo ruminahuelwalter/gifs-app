@@ -1,11 +1,12 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Gif } from '../../Interfaces/gifs.interface';
 import { CommonModule } from '@angular/common';
+import { SharedModule } from '../../../shared/shared.module';
 
 @Component({
   selector: 'gifs-card',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, SharedModule],
   templateUrl: './card.component.html',
   styleUrl: './card.component.css'
 })
